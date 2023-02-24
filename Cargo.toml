@@ -1,0 +1,14 @@
+[package]
+name = "nanograin"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[dependencies]
+iota = "0.2.3"
+ladspa = "0.3.4"
+rand = "0.8.5"
+
+[lib]
+name = "nanograin"
+crate-type = ["dylib"]
