@@ -62,9 +62,6 @@ impl Plugin for NanoGrain {
 
         for i in 0..sample_count {
             let input_sample = (input.0[i], input.1[i]);
-            if self.grain_read_pos >= 24000 {
-                println!("grain size: {grain_size}");
-            }
             let sample = self.buf[self.grain_read_idx][self.grain_read_pos];
             self.buf[self.grain_read_idx][self.grain_read_pos].2 *= feedback;
 
